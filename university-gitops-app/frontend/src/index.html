@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitOps Demo Frontend</title>
+</head>
+<body>
+    <h1>Welcome to Our GitOps Demo!</h1>
+    <p>This is served from a containerized Nginx</p>
+    <div id="content"></div>
+    <script>
+        fetch('http://backend-service:5000/api')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('content').innerHTML = 
+                    `<p>Backend says: ${data.message}</p>`;
+            });
+    </script>
+</body>
+</html>
