@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-org/university-gitops-config
+    repoURL: https://github.com/abdulquddus123/university_kubernetes_group_project/tree/main/university-gitops-config
     path: base
     targetRevision: HEAD
   destination:
