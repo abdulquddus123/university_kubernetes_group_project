@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Welcome to Our GitOps Demo!</h1>
-    <p>This is served from a containerized Nginx Second version</p>
+    <p>This is served from a containerized  Second version</p>
     <div id="content"></div>
     <script>
         fetch('http://backend-service:5000/api')
@@ -13,7 +13,7 @@
             .then(data => {
                 document.getElementById('content').innerHTML = 
                     `<p>Backend says: ${data.message}</p>`;
-            });
+            });ßßß
     </script>
 </body>
 </html>
